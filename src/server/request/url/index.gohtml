@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL</title>
+</head>
+
+<body>
+
+    <h1>{{uc .Heading}}</h1>
+
+    <p><b><em>{{.Info}}</em></b></p>
+
+    {{if .Form}}
+    <main>
+        <p>
+            <strong>Varibles names</strong> (indentifiers) and <em>values</em>:
+            {{range $key, $value := .Form}}
+            <p><strong>{{$key}}</strong></p>
+            <ul>
+                {{range $field := $value}}
+                <li>{{$field}}</li>
+                {{end}}
+            </ul>
+            {{end}}
+        </p>
+    </main>
+    {{end}}
+
+    <br>
+    <h3>{{uc .Method}}</h3>
+    <h4>{{.URL}}</h4>
+    <br>
+
+
+    <form action="/?fname=james" method="POST">
+        <input type="text" name="fname" placeholder="first name" autofocus autocomplete="off">
+        <input type="submit" name="submit-btn" value="submit button">
+    </form>
+
+</body>
+
+</html>

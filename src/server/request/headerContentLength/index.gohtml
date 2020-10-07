@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Content Length</title>
+</head>
+<body>
+
+    <!-- <center> -->
+        <h1>{{uc .Heading}}</h1>
+
+    <p><b><em>{{.Info}}</em></b></p>
+
+    {{if .Form}}
+    <main>
+        <p>
+            <strong>Varibles names</strong> (indentifiers) and <em>values</em>:
+            {{range $key, $value := .Form}}
+            <p><strong>{{$key}}</strong></p>
+            <ul>
+                {{range $field := $value}}
+                <li>{{$field}}</li>
+                {{end}}
+            </ul>
+            {{end}}
+        </p>
+    </main>
+    {{end}}
+
+    <br>
+    <h3>{{uc .Method}}</h3>
+
+    {{if .URL}}
+    <h4>{{.URL}}</h4>
+    <ul>
+        <li>Scheme: {{.URL.Scheme}}</li>
+        <li>Opaque: {{.URL.Opaque}}</li>
+        <li>Host: {{.URL.Host}}</li>
+        <li>Path: {{.URL.Path}}</li>
+        <li>RawPath: {{.URL.RawPath}}</li>
+        <li>ForceQuery: {{.URL.ForceQuery}}</li>
+        <li>RawQuery: {{.URL.RawQuery}}</li>
+        <li>Fragment: {{.URL.Fragment}}</li>
+    </ul>
+    {{end}}
+    
+    {{if .Header}}
+    <h4>Header</h4>
+    {{range $index, $value := .Header}}
+    <strong><em>{{$index}}</em></strong>
+
+    <ul>
+    {{range $index, $header := $value}}
+    <li>{{$header}}</li>
+    {{end}}
+    </ul>
+    {{end}}
+    {{end}}
+
+    <h4>{{.Host}}</h4>
+    <h4>{{.ContentLength}}</h4>
+    <br>
+
+    <h2>INPUT VALUE</h2>
+
+    <p><strong>first name=></strong> {{uc .InputName}}</p>
+
+    <form action="/?fname=james" method="POST">
+        <input type="text" name="fname" placeholder="first name" autofocus autocomplete="off">
+        <input type="submit" name="submit-btn" value="submit button">
+    </form>
+    <!-- </center> -->
+    
+</body>
+</html>
