@@ -1,3 +1,3 @@
-module github.com/egnimos/goLangWebPratice
+module github.com/egnimos/goLangWebPractice
 
-go 1.14
+go 1.15
