@@ -20,17 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e06f40ce-9c67-4313-bd88-9e1a5eb6ecfe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/goLangWebPractice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/serveMux/defaultMux/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/serveMux/newServeMux/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/handleFunc/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/handleFunc1/ " afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/handleFunc1/handleFunc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/handleFunc1/handleFunc1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/handleFunc1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/thirdParty/handlingFunction.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/thirdParty/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/thirdParty/template/about.gohtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/thirdParty/template/apply.gohtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/thirdParty/template/contact.gohtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/thirdParty/template/index.gohtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/thirdParty/thirdParty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
@@ -57,6 +73,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
